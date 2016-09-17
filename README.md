@@ -1,4 +1,4 @@
-# CliFM 1.4-8 (2016)
+# CliFM 1.4-9 (2016)
 
 As its ver name suggests, CliFM's most distinctive feature is that it's entirely 
 text-based: no mouse, no graphical interface of any kind (not even ncurses and its 
@@ -69,7 +69,12 @@ Commands:
     only those elements. 
 - paste: copy selected elements into the current folder.
 - move: move selected elements into the current folder.
+- clear: clear the screen.
+- color [on off]: toggle colored output on/off.
+- hidden [on off]: toggle hidden files on/off.
+- col,columns [on off]: toggle columns on/off.
 - x, term: open a new terminal (xterm by default) in the current path and in a different
      window. 
 - v, ver, version: show CliFM version.
 - q, quit, exit: quit CliFM.
+- Config file: $HOME/.config/clifm/clifmrc\n
