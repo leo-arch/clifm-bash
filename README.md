@@ -1,6 +1,6 @@
 # CliFM 1.4-9 (2016)
 
-As its ver name suggests, CliFM's most distinctive feature is that it's entirely 
+As its very name suggests, CliFM's most distinctive feature is that it's entirely 
 text-based: no mouse, no graphical interface of any kind (not even ncurses and its 
 keyboard arrows), but only CLI commands (something we, the keyboard lovers, certainly 
 enjoy). To be sure, there are lots of GUI file managers out there (from Dolphin to 
