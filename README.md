@@ -1,4 +1,4 @@
-# CliFM 1.4-9 (2016)
+# CliFM 1.5-6 (2016)
 
 As its very name suggests, CliFM's most distinctive feature is that it's entirely 
 text-based: no mouse, no graphical interface of any kind (not even ncurses and its 
