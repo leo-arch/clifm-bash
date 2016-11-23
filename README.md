@@ -1,11 +1,11 @@
 # CliFM 1.5-4 (Nov 21, 2016)
 
-As its very name suggests, CliFM's most distinctive feature is that it's entirely 
-text-based: no mouse, no graphical interface of any kind (not even ncurses and its 
-keyboard arrows), but only CLI commands (something we, the keyboard lovers, certainly 
-enjoy). To be sure, there are lots of GUI file managers out there (from Dolphin to 
-Thunar) and a few TUI-based others as well (such as MC, Ranger, ViFM or Clist). But, 
-as far as I know, and leaving aside Linux' own built-in commands, there is no 
+As its very name suggests, Cli File Manager's (CliFM) most distinctive feature is that 
+it's entirely text-based: no mouse, no graphical interface of any kind (not even ncurses 
+and its keyboard arrows), but only CLI commands (something we, the keyboard lovers, 
+certainly enjoy). To be sure, there are lots of GUI file managers out there (from Dolphin 
+to Thunar) and a couple of TUI-based others as well (such as MC, Ranger, ViFM or Clist). 
+But, as far as I know, and leaving aside Linux' own built-in commands, there is no 
 completely CLI file manager in the Linux world (and this, let me say, is quite weird). 
 This is the hole CliFM is intended to fill. However, even if it were not the only one, 
 it's still a nice and functional alternative. After all, this is what Linux is all 
@@ -15,8 +15,10 @@ CLI file manager for our beloved Linux?
 
 CliFM was first deviced with purely self-educational purposes. All I wanted was to 
 learn more about the amazing bash. But then the project began growing rapidilly, up to 
-the point where it became what it is today: a simple, but fully functional file manager. 
-As such file manager, CliFM is intended to perform all the basic operations you may 
+the point where it became what it is today: a simple, but fully functional file manager.
+Insofar as it was entirely written in Shell script, CliFM's code is accesible and easily
+modifiable by any average Linux user.
+As a file manager, CliFM is intended to perform all the basic operations you may 
 expect from any file manager out there: navigate through your files and folders, 
 bookmark your favorite paths, copy, rename, delete, move, paste, open, create files and 
 folders, and, this is one of its most distinctive features, the ability to remember 
@@ -29,13 +31,12 @@ CliFM is basically aimed to make easier and faster all the common file operation
 everyday work, such as copy, move, delete, etc. (specially when files or paths are 
 too long), which tend to be too tedious when carried out via Linux' built-in commands. 
 A concrete example: to copy a file with a long name (even worse if it has spaces) 
-to a distant path with the 'cp' command, could be a true PITA. Well, with CliFM you 
-can do this in a much simpler way. Why? In the first place, because you don't have to 
-type the name of the file you want, say, to copy, but only its corresponding list number. 
-In the second place, because you don't need to type any path either, for with CliFM you 
-browse your files via short commands followed by list numbers; and the thing gets even 
-faster with CLiFM bookmarks manager.
-
+to a distant path with the 'cp' command, often results in a quite long command. Well, with 
+CliFM this can be achieved in a much simpler way. Why? In the first place, because you 
+don't have to type the name of the file you want, say, to copy, but only its corresponding 
+list number. In the second place, because you don't need to type any path either, for with 
+CliFM you browse your files via short commands followed by list numbers; and the thing gets 
+even faster with CLiFM bookmarks manager.
 
 General Usage:
 
