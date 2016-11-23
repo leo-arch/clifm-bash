@@ -4,7 +4,7 @@ As its very name suggests, Cli File Manager's (CliFM) most distinctive feature i
 it's entirely text-based: no mouse, no graphical interface of any kind (not even ncurses 
 and its keyboard arrows), but only CLI commands (something we, the keyboard lovers, 
 certainly enjoy). To be sure, there are lots of GUI file managers out there (from Dolphin 
-to Thunar) and a couple of TUI-based others as well (such as MC, Ranger, ViFM or Clist). 
+to Thunar) and a couple of TUI-based others as well (such as MC, Ranger, ViFM, VFU or Clist). 
 But, as far as I know, and leaving aside Linux' own built-in commands, there is no 
 completely CLI file manager in the Linux world (and this, let me say, is quite weird). 
 This is the hole CliFM is intended to fill. However, even if it were not the only one, 
