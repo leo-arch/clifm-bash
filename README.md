@@ -4,14 +4,14 @@ As its very name suggests, CliFM's most distinctive feature is that it's entirel
 text-based: no mouse, no graphical interface of any kind (not even ncurses and its 
 keyboard arrows), but only CLI commands (something we, the keyboard lovers, certainly 
 enjoy). To be sure, there are lots of GUI file managers out there (from Dolphin to 
-Thunar) and a few TUI-based others as well (such as MC, Ranger, or ViFM). But, as far 
-as I know, and leaving aside Linux' own built-in commands, there is no completely CLI 
-file manager in the Linux world (and this, let me say, is quite weird). This is the 
-hole CliFM is intended to fill. However, even if it were not the only one, it's still a 
-nice and functional alternative. After all, this is what Linux is all about: freedom; 
-and freedom no doubt implies alternatives. Furthermore, the CLI is one of Linux' most 
-most distinctive hallmarks. So, how could it be possible not to have a CLI file manager 
-for our beloved Linux?
+Thunar) and a few TUI-based others as well (such as MC, Ranger, ViFM or Clist). But, 
+as far as I know, and leaving aside Linux' own built-in commands, there is no 
+completely CLI file manager in the Linux world (and this, let me say, is quite weird). 
+This is the hole CliFM is intended to fill. However, even if it were not the only one, 
+it's still a nice and functional alternative. After all, this is what Linux is all 
+about: freedom; and freedom no doubt implies alternatives. Furthermore, the CLI is 
+one of Linux' most distinctive hallmarks. So, how could it be possible not to have a 
+CLI file manager for our beloved Linux?
 
 CliFM was first deviced with purely self-educational purposes. All I wanted was to 
 learn more about the amazing bash. But then the project began growing rapidilly, up to 
