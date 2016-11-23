@@ -16,7 +16,7 @@ CLI file manager for our beloved Linux?
 CliFM was first deviced with purely self-educational purposes. All I wanted was to 
 learn more about the amazing bash. But then the project began growing rapidilly, up to 
 the point where it became what it is today: a simple, but fully functional file manager.
-Insofar as it was entirely written in Shell script, CliFM's code is accesible and easily
+Insofar as it is entirely written in Shell script, CliFM's code is accesible and easily
 modifiable by any average Linux user.
 As a file manager, CliFM is intended to perform all the basic operations you may 
 expect from any file manager out there: navigate through your files and folders, 
