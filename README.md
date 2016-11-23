@@ -17,7 +17,10 @@ CliFM was first deviced with purely self-educational purposes. All I wanted was 
 learn more about the amazing bash. But then the project began growing rapidilly, up to 
 the point where it became what it is today: a simple, but fully functional file manager.
 Insofar as it is entirely written in Shell script, CliFM's code is accesible and easily
-modifiable by any average Linux user.
+modifiable by any average Linux user. Furthermore, being a simple CLI program, the source
+code takes only 50Kb, while the weight of the application when running is about a few 
+hundred Kb, leaving aside the memory consumed by the terminal on which it is running.
+
 As a file manager, CliFM is intended to perform all the basic operations you may 
 expect from any file manager out there: navigate through your files and folders, 
 bookmark your favorite paths, copy, rename, delete, move, paste, open, create files and 
