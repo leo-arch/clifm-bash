@@ -1,4 +1,4 @@
-# CliFM 1.5-6 (2016)
+# CliFM 1.5-4 (Nov 21, 2016)
 
 As its very name suggests, CliFM's most distinctive feature is that it's entirely 
 text-based: no mouse, no graphical interface of any kind (not even ncurses and its 
@@ -44,6 +44,8 @@ Commands:
 - h, help, ?: show this help.
 - /*: This is the quick search function. Just type '/' followed by the string you 
     are looking for, and CliFM will list all the matches in the current folder.
+- :* In case some external command conflicts with some of the CliFM internal commands, 
+    you can still run it by typing the command you want preceded by a colon (:)
 - bm, bookmarks: open the bookmarks menu. Here you can add, remove or edit your 
     bookmarks to your liking, or simply cd into the desired bookmark by entering 
     either its list number or its hotkey.
@@ -69,7 +71,7 @@ Commands:
     only those elements. 
 - paste: copy selected elements into the current folder.
 - move: move selected elements into the current folder.
-- clear: clear the screen.
+- clr: clear the screen.
 - color [on off]: toggle colored output on/off.
 - hidden [on off]: toggle hidden files on/off.
 - col,columns [on off]: toggle columns on/off.
@@ -77,4 +79,12 @@ Commands:
      window. 
 - v, ver, version: show CliFM version.
 - q, quit, exit: quit CliFM.
-- Config file: $HOME/.config/clifm/clifmrc\n
+
+Besides all these commands, you can also run built-in or external commands from the CliFM 
+prompt by simply typing the command you want to run.
+   In case the command accepts a file or folder as input, you can of course type the entire command
+just as if you were in the command line. Yet, you can also make use of the ELN to make the thing
+easier. For instance, let's suppose you want to open a text file via Leafpad. In this case all you 
+need to do is to type at the CliFM prompt: "leafpad filename" or "leafpad ELN". 
+
+Config file: $HOME/.config/clifm/clifmrc
