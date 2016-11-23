@@ -10,9 +10,13 @@
 #Note on POSIX compatibility: when using a variable as an argument for a command use double quotes
 #(""). Ex: echo "$var"
 
+#BUG: when using the cd built-in command with asterisk (*), it sometimes give an error, but it 
+#doesn't when the full dirname is given. It mostly happens when the script has been running and 
+#executing some commands for a while (though I'm not sure about what these commands are).
+
 ########CliFM############
-version="1.5-3"
-date="Oct 01, 2016"
+version="1.5-4"
+date="Nov 21, 2016"
 clear="printf '\033c'" #I should replace all(?) the calls to the clean command by this one, since
 #the former doesn't really clear the screen.
 
@@ -570,7 +574,7 @@ path, default text editor and terminal, and hidden files.\n"
            prompt) pwd && prompt && return;;
            x|term) (nohup $default_terminal &) > /dev/null 2>&1 && prompt && return;;
            v|ver|version) 
-              echo -e "\nCliFM $version ($date), by L. M. Abramovich\n"
+              echo -e "CliFM $version ($date), by L. M. Abramovich"
               prompt && return;;
            q|quit|exit) exit 0;; #rm /tmp/.clifm_hist && exit 0;;
            hist|history) 
@@ -612,7 +616,20 @@ path, default text editor and terminal, and hidden files.\n"
                     #If the command has a desktop file and it doesn't work only inside a 
                     #terminal ("Categories=ConsoleOnly" in the command desktop file)...
                     if [[ $cmd_path_found == true ]] && ! [[ $(cat ${cmd_path}/${elements[0]}.desktop 2>/dev/null | grep "ConsoleOnly") ]]; then
-                       (nohup ${elements[@]} &) > /dev/null 2>&1; prompt && return
+                       #Allow the user to use an ELN as an argument for the program to be executed
+                       #if the element to be opened is a number and it's contained in dir_files
+                       #open the element corresponding to that number
+                       if ! [[ $(echo "${elements[1]}" | sed 's/[0-9]//g') ]]; then
+                          if [[ ${elements[1]} -ne 0 ]] && [[ ${elements[1]} -le ${#dir_files[@]} ]]; then
+                             (nohup ${elements[0]} ${dir_files[$(( ${elements[1]}-1 ))]} &) > /dev/null 2>&1; prompt && return
+                          else
+                             echo "Clifm: ${elements[1]} is not a valid element." && prompt && return
+                          fi
+                       else
+                          #if the element is not a number, simply use it as an argument for the
+                          #command to be run
+                          (nohup ${elements[@]} &) > /dev/null 2>&1; prompt && return
+                       fi
                     else
                        eval "${elements[@]}"; prompt && return
                     fi
