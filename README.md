@@ -38,7 +38,12 @@ faster with CLiFM bookmarks manager.
 
 
 General Usage:
-ELN = element line number. E.g. "23 - openbox". 23 is the ELN of openbox 
+
+ELN = element line number. E.g. "23 - openbox". 23 is the ELN of the openbox file.
+Arguments in square brackets ([]) point to different possible arguments. Only one of
+them is to be passed to the command.
+Arguments in curly brackets ({}) are optional arguments, i.e. they may not be passed to
+the command.
 
 Commands:
 - h, help, ?: show this help.
@@ -51,22 +56,22 @@ Commands:
     either its list number or its hotkey.
 - o, open ELN: open a folder or a file. I you want to open a file with a different 
     program, just add the command name as a second argument, e.g. 'open ELN leafpad' 
-- cd [path]: it works just as the built-in 'cd' command.
+- cd {path}: it works just as the built-in 'cd' command.
 - b, back: go back to the parent folder.
 - pr, prop ELN: display the properties of the selected element.
-- ren ELN: rename an element.
+- ren ELN {new_name}: rename an element.
 - md, mkdir name ... n: create one or more new folders.
 - t, touch name ... n: create one or more new files.
-- ln, link [sel, ELN] [link_name]: create a simbolic link. The source element could 
+- ln, link [sel, ELN] link_name: create a simbolic link. The source element could 
   be either a selected element, in which case you has to simply type 'sel' as first 
   argument, or an element listed in the screen, in which case you simply has to specify 
   its list number as first argument. The second argument is always a file name for the 
   symlink.
-- s, sel ELN ELN-ELN ... n: select one or multiple elements. Sel command accepts range
+- s, sel [ELN, ELN-ELN, ... n]: select one or multiple elements. Sel command accepts range
     of elements, say 1-6, just as '*' to select all the elements of the current folder. 
 - sh, show, show sel: show currently selected elements.
 - ds, desel: deselect currently selected elements.
-- del [ELN ... n]: With no arguments, del command will delete those elements currently
+- del {ELN ... n}: With no arguments, del command will delete those elements currently
     selected, if any. Otherwise, when one or more ELN's are passed, it will delete
     only those elements. 
 - paste: copy selected elements into the current folder.
