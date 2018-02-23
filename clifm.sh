@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #/bin/sh is generally a symlink pointing to the default shell (ex: /bin/bash). If I use /bin/bash
 #in the shebang, the script will not run in case bash is not installed.
 
