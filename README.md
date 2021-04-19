@@ -1,5 +1,7 @@
 # CliFM 1.5-4 (Nov 21, 2016)
 
+### This version of CliFM is discontinued. If you are interested in the project, you should try rather the ![C version](https://github.com/leo-arch/clifm)
+
 As its very name suggests, Cli File Manager's (CliFM) most distinctive feature is that 
 it's entirely text-based: no mouse, no graphical interface of any kind (not even ncurses 
 and its keyboard arrows), but only CLI commands (something we, the keyboard lovers, 
